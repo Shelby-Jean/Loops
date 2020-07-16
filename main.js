@@ -18,7 +18,7 @@ let person = {
 };
 
 // Use a for...in loop and if statement to console.log the value associated with the key birthDate if the birth year is an odd number.
-for (const x in person) {
+for (let x in person) {
   if (x === 'birthDate' && parseInt(person[x].slice(person[x].length - 4)) % 2 !== 0) {
     console.log(person[x]);
   }
